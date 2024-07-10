@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href=".\styles\style.css" />
+  </head>
+  <body class="body">
+    <header><img class="logo" src=".\assets\Logo@2x.png" /></header>
+    <main class="presentacion">
+      <div class="cajaTexto">
+        <div class="columna1">
+          <textarea
+            class="textarea"
+            type="text"
+            id="textoOriginal"
+            placeholder="Ingrese texto aquí"
+          ></textarea>
+          <div class="warning">
+            <img class="icon" src=".\assets\bi_exclamation-circle-fill.png">
+            <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+          </div>
+
+          <div class="botones">
+            <button onclick="cifrarTexto();" class="encriptarBoton">
+              Encriptar
+            </button>
+            <button onclick="desencriptar();" class="desencriptarBoton">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+
+        <div class="columna2">
+          <div class="cajaResultado">
+            <img class="muneco" id="muneco" src=".\assets\Muñeco.png" />
+            <p class="mensajeEncriptado" id="mensajeEncriptado"></p>
+            <p class="mensajeResultado" id="mensajeResultado">
+              Ningún mensaje fue encontrado
+            </p>
+            <p class="mensajeResultado2" id="mensajeResultado2">
+              Ingresa el texto que desees encriptar o desencriptar
+            </p>
+            <button
+              onclick="copiar();"
+              id="copiarBoton"
+              class="copiarBoton"
+              hidden
+            >
+              Copiar
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Desarrollado por Oliver Arias Martinez, Julio 2024</p>
+    </footer>
+
+    <script src=".\script\script.js" defer></script>
+  </body>
+</html>
