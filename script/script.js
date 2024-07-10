@@ -4,7 +4,7 @@ function asignarTextoElemento(elemento, texto) {
   return;
 }
 
-function copiar() {
+function copiar() {//prueba de arreglos en git local
   let textoEncriptado = document
     .querySelector(".mensajeEncriptado")
     .textContent.trim();
@@ -30,9 +30,7 @@ function copiarTextoAlPortapapeles(texto) {
 }
 
 function cifrarTexto() {
-  const textoOriginal = document
-    .getElementById("textoOriginal")
-    .value.toLowerCase();
+  const textoOriginal = document.getElementById("textoOriginal").value.toLowerCase();
   let textoCifrado = "";
 
   // Expresión regular para caracteres permitidos: letras, espacios y acentos
